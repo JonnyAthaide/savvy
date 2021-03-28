@@ -1,0 +1,68 @@
+.navbar {
+    padding-top: 3.2%;
+    transition: all 0.5s ease;
+
+    @include media-breakpoint-down(md) {
+        background: $white;
+    }
+
+    &.bg-light {
+        background-color: transparent;
+    }
+
+    .navbar-brand {
+        transition: all 1s ease;
+
+        &.b-top {
+            @include media-breakpoint-down(sm) {
+                visibility: hidden;
+                width: 50%;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border: none;
+            outline: none;
+        }
+    }
+
+    .navbar-collapse {
+        .navbar-nav {
+            @include media-breakpoint-down(md) {
+                margin-top: rem(30);
+
+                .nav-item {
+                    text-align: center;
+                    font-size: rem(24);
+                    margin-bottom: 6px;
+
+                    &:last-child {
+                        margin-top: rem(20);
+                        background: none;
+
+                        a {
+                            @include know-more($color-btn-2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.scroll {
+    padding-top: rem(10);
+    background: $white;
+    transition: all 0.5s ease;
+
+    .navbar-brand {
+        width: 250px;
+        transition: all 1s ease;
+    }
+}

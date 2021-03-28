@@ -1,0 +1,42 @@
+.foot-banner {
+    background-color: $gray-2;
+    padding: rem(33);
+
+    @include media-breakpoint-down(sm) {
+        padding: rem(20) 0;
+    }
+
+    &--content {
+        >div {
+            @include inline-block;
+            margin-right: rem(60);
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
+        }
+
+        .quem-usa {
+            font-size: rem(40);
+            font-family: $font-bold-it;
+            text-transform: uppercase;
+            color: $font-color-7;
+            letter-spacing: 4px;
+
+            @include media-breakpoint-down(sm) {
+                display: block;
+                font-size: rem(24);
+                width: 100%;
+                margin-bottom: rem(16);
+            }
+        }
+
+        .kibon,
+        .unilever {
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+    }
+}

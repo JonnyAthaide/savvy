@@ -1,0 +1,33 @@
+footer {
+    background: {
+        color: $gray-1;
+        image: v-url($imgPath + 'microfone.png');
+        repeat: no-repeat;
+        position: right 50px;
+        size: contain;
+    }
+
+    >div {
+        padding-top: rem(74);
+        padding-bottom: rem(74);
+
+        @include media-breakpoint-down(sm) {
+            padding-top: rem(30);
+            padding-bottom: rem(30);
+        }
+    }
+
+    h2 {
+        font-size: rem(50);
+        margin-bottom: rem(60);
+
+        @include media-breakpoint-down(sm) {
+            font-size: rem(36);
+            width: 96%;
+        }
+    }
+
+    .rodape {
+        background: $gray-2;
+    }
+}

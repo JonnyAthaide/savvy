@@ -1,0 +1,51 @@
+/* Important */
+$i: !important;
+
+/*** COLORs ***/
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0, 0, 0, 1);
+
+/*** GRAYs ***/
+$gray-0: #dad9d6 !default;
+$gray-1: #e5e5e5 !default;
+$gray-2: #d9d8d8 !default;
+
+
+/*** COLORs GRADIENTE ***/
+$color-0: #c80d86 !default;
+$color-1: #b01e8e !default;
+$color-2: #8a389b !default;
+$color-3: #6353a9 !default;
+$color-4: #4668b2 !default;
+$color-5: #1689c3 !default;
+$color-6: #c90c86 !default;
+$color-7: #933199 !default;
+$color-8: #565dad !default;
+$color-9: #267ebd !default;
+
+$color-btn-0: #8b2985 !default;
+$color-btn-1: #a01d80 !default;
+$color-btn-2: #cc0379 !default;
+$color-btn-3: #fff367 !default;
+
+/*** FONTs ***/
+$font-default:      "Intelo Regular", Arial;
+$font-bold:         "Intelo Bold", Arial;
+$font-bold-it:      "Intelo BoldItalic", Arial;
+$font-italic:       "Intelo Italic", Arial;
+$font-light:        "Intelo Light", Arial;
+$font-light-it:     "Intelo LightItalic", Arial;
+
+$font-size:         16px;
+$font-color-0:      #333333 !default;
+$font-color-1:      $white !default;
+$font-color-2:      #004fbd !default;
+$font-color-3:      #666666 !default;
+$font-color-4:      #959595 !default;
+$font-color-5:      #381970 !default;
+$font-color-6:      #8c8c8c !default;
+$font-color-7:      #2e5fa9 !default;
+
+/*** CONFIGs ***/
+$imgPath:           "../img/";
+$version: "#{random(9999)}" !default;

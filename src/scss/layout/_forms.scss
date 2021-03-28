@@ -1,0 +1,46 @@
+form {
+    .form-group {
+        label {
+            color: $font-color-3;
+            padding-left: rem(5);
+        }
+
+        input,
+        textarea {
+            resize: none;
+            color: $font-color-2;
+            background-color: transparent;
+            border: none;
+            border-bottom: $font-color-0 solid 1px;
+            @include border-radius(0);
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $font-color-2;
+                background-color: transparent;
+                border: none;
+                border-bottom: $font-color-0 solid 1px;
+                outline: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+        }
+
+        textarea {
+            @include media-breakpoint-down(sm) {
+                border: $gray-2 solid 1px;
+                background-color: $white;
+                @include border-radius(10px);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    border: $gray-2 solid 1px;
+                    background-color: $white;
+                    @include border-radius(10px);
+                }
+            }
+        }
+    }
+}

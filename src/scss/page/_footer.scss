@@ -1,0 +1,82 @@
+.rodape {
+    .sv {
+        @include inline-block;
+        width: 50%;
+        font-family: $font-bold-it;
+        color: $font-color-4;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .savvy {
+
+        &--logo {
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: rem(70);
+                letter-spacing: 5px;
+                line-height: 1;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: rem(38);
+                }
+            }
+
+            p {
+                font-size: rem(16);
+            }
+
+        }
+
+        &--contato {
+            border-left: $font-color-4 1px solid;
+
+            @include media-breakpoint-down(sm) {
+                border: none;
+            }
+
+            ul {
+                list-style: none;
+
+                @include media-breakpoint-down(sm) {
+                    padding-left: 20px;
+                }
+
+                li {
+                    font-size: rem(16);
+
+                    @include media-breakpoint-down(md) {
+                        text-align: left;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: rem(14);
+                    }
+
+                    a {
+                        color: $font-color-4;
+                    }
+                }
+            }
+        }
+    }
+
+    .product {
+        text-align: right;
+
+        @include media-breakpoint-down(md) {
+            text-align: center;
+            margin-top: rem(50);
+        }
+        @include media-breakpoint-down(md) {
+        margin-top: rem(10);
+    }
+    }
+}

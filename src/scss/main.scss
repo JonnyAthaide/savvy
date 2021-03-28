@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* IMPORT COLORs THEMES */
+// @import 'theme/assai';
+
+/* IMPORT UTILITIES */
+@import "./../../node_modules/compass-mixins/lib/compass";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/functions";
+@import "utils/placeholders";
+
+/* ================================= */
+
+/* IMPORT VENDORS */
+@import 'utils/vendor';
+
+/* ================================= */
+
+/* IMPORT BASE */
+// @import "base/reset";
+@import "base/fonts";
+@import "base/utilities";
+@import "base/reset";
+
+/* ================================= */
+
+/* IMPORT LAYOUT */
+@import "layout/error";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/header";
+@import "layout/nav";
+
+/* ================================= */
+
+/* IMPORT COMPONENTS */
+@import 'components/buttons';
+@import 'components/carousel';
+
+/* ================================= */
+
+/* IMPORT PAGE SECTION */
+@import "page/banner";
+@import "page/foot-banner";
+@import "page/principal";
+@import "page/pq-utilizar";
+@import "page/funcionalidades";
+@import "page/customizacao";
+@import "page/formulario";
+@import "page/footer";
+
+/* ================================= */

@@ -1,0 +1,32 @@
+#main {
+    margin: auto;
+    color: $font-color-1;
+
+    background: {
+        image: v-url($imgPath + 'bg-main.jpg');
+        repeat: no-repeat;
+        position: top center;
+        size: cover;
+    }
+
+    @include media-breakpoint-down(md) {
+        background: {
+            image: v-url($imgPath + 'bg-main-tab.jpg');
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        background: {
+            image: v-url($imgPath + 'bg-main-mobi.jpg');
+        }
+    }
+
+    section {
+        padding-top: rem(74);
+        padding-bottom: rem(74);
+
+        h2 {
+            margin-bottom: rem(44);
+        }
+    }
+}

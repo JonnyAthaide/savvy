@@ -1,0 +1,115 @@
+.customizacao {
+    padding-bottom: 0$i;
+
+    &--left {
+        padding-bottom: rem(30);
+
+        h2 {
+            margin-top: rem(40);
+
+            @include media-breakpoint-down(sm) {
+                margin-top: rem(0);
+                text-align: center;
+            }
+        }
+
+        p {
+            margin-bottom: rem(54);
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: rem(30);
+            }
+        }
+    }
+
+    /* &--right {
+        .cel-carousel {
+            width: 438px;
+            height: 608px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            background: {
+                image: v-url($imgPath + 'mobile.png');
+                repeat: no-repeat;
+                position: top center;
+                size: cover;
+            }
+
+            @include media-breakpoint-down(md) {
+                position: relative;
+            }
+
+            @include media-breakpoint-down(xs) {
+                width: 240px;
+                height: 330px;
+            }
+
+
+            .step-carousel {
+                width: 399px;
+                height: 521px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 4px;
+                margin: auto;
+
+                @include media-breakpoint-down(sm) {
+                    width: 216px;
+                    height: 280px;
+                }
+
+                .owl-nav-arrow {
+                    width: 130%;
+                    position: absolute;
+                    left: -15%;
+                    right: -15%;
+                    margin: auto;
+                    bottom: 240px;
+
+                    @include media-breakpoint-down(xs) {
+                        width: 140%;
+                        left: -20%;
+                        right: -20%;
+                        bottom: 160px;
+                    }
+
+                    button {
+                        position: absolute;
+                        background: transparent;
+                        cursor: pointer;
+                        border: none;
+
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            outline: none;
+
+                        }
+
+                        &.owl-prev {
+                            left: 0;
+                        }
+
+                        &.owl-next {
+                            right: 0;
+                        }
+
+                        span {
+                            font-size: rem(80);
+                            color: $color-btn-3;
+                            line-height: 1;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    } */
+
+}

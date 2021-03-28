@@ -1,0 +1,93 @@
+@mixin gradiente-linear($clr1, $clr2) {
+    background-image: linear-gradient($clr1, $clr2);
+}
+
+@mixin text-gradiente($color-top, $color-bottom) {
+    color: $color-top;
+    @include gradiente-linear($color-top, $color-bottom);
+    @include background-clip(text);
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin typeCheckbox($outline-color: $color-1,
+$border-color: $white,
+$bg-color: $white,
+$bg-color-chk: $color-4,
+) {
+    outline: $color-1 1px solid;
+    border: $white 3px solid;
+    position: relative;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-right: rem(8);
+    padding: 4px;
+    background-color: $white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    &:checked {
+        background-color: $color-4;
+    }
+}
+
+@mixin typeRadioLabel($outline-color: $color-1,
+$border-color: $white,
+$bg-color: $white,
+$bg-color-chk: $color-4,
+) {
+    position: absolute;
+    visibility: hidden;
+
+    &+label {
+        position: relative;
+        min-height: 20px;
+        padding-left: inherit;
+        @include inline-block;
+        width: 30%;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            margin-top: rem(3);
+            margin-right: rem(8);
+            float: left;
+            width: 14px;
+            height: 14px;
+            margin-left: rem(6);
+            background-color: $white;
+            border: $color-1 1px solid;
+            @include border-radius(100%);
+        }
+    }
+
+    &:checked {
+        &+label {
+            &::after {
+                content: "";
+                position: absolute;
+                top: 7px;
+                left: 10px;
+                width: 8px;
+                height: 8px;
+                background-color: $color-4;
+                @include border-radius(100%);
+            }
+        }
+    }
+}
+
+@mixin btn-gradient($color-0, $color-1) {
+    color: $white;
+    @include gradiente-linear($color-0, $color-1);
+}
+
+@mixin know-more($color) {
+    color: $color;
+    border: 3px $color solid;
+    background-color: transparent;
+    @include border-radius(50px);
+}

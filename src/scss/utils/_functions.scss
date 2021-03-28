@@ -1,0 +1,18 @@
+@function em( $pixels, $default: $font-size) {
+    $pxtoem: #{$pixels/$default};
+    @return $pxtoem + "em";
+}
+
+@function parseInt($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+@function rem($size) {
+    @return parseInt($size) / parseInt($font-size) * 1rem;
+}
+
+@function v-url($url) {
+    $v-url: url($url + "?v=" + $version);
+
+    @return $v-url;
+}

@@ -1,0 +1,7 @@
+%text-shadow {
+    @include text-shadow($black 1px 1px);
+}
+
+%gradiente-linear {
+    @include gradiente-linear($color-btn-0, $color-btn-1);
+}
