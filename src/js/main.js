@@ -1,3 +1,10 @@
+import './jquery-global.js';
+import 'jquery-migrate';
+import 'popper.js';
+import 'bootstrap';
+import 'owl.carousel';
+import 'jquery-mask-plugin';
+
 var step = {
     init: function () {
         $('.step-carousel').owlCarousel({
@@ -5,7 +12,7 @@ var step = {
             loop: true,
             margin: 0,
             nav: true,
-            navText: ['<img src="./assets/img/arrow-left.png">', '<img src="./assets/img/arrow-right.png">  '],
+            navText: ['<img src="./src/img/arrow-left.png">', '<img src="./src/img/arrow-right.png">  '],
             navContainer: '.owl-nav-arrow',
             dots: false,
         })
@@ -15,8 +22,8 @@ var step = {
 var mask = {
     init: function () {
         var SPMaskBehavior = function (val) {
-                return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-            },
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
             spOptions = {
                 onKeyPress: function (val, e, field, options) {
                     field.mask(SPMaskBehavior.apply({}, arguments), options);
@@ -34,7 +41,7 @@ var modulo = {
             loop: true,
             margin: 0,
             nav: true,
-            navText: ['<img src="./assets/img/arrow-left.png">', '<img src="./assets/img/arrow-right.png">  '],
+            navText: ['<img src="./src/img/arrow-left.png">', '<img src="./src/img/arrow-right.png">  '],
             navContainer: '.owl-nav-funct',
             dots: false,
         })
@@ -67,14 +74,14 @@ let scrollClass = {
 }
 
 let resize = {
-    init: function () {        
+    init: function () {
 
-        if ( window.innerWidth < 540) {
+        if (window.innerWidth < 540) {
             $('.owl-modulo').addClass('owl-carousel owl-theme owl-loaded')
         } else {
             $('.owl-modulo').trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded owl-theme');
         }
-        
+
         $(window).on('resize', function () {
             var win = $(window).width()
             if (win < 540) {
